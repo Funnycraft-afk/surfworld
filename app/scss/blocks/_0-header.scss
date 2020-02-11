@@ -1,0 +1,213 @@
+.header {
+    position: relative;
+    height: 100vh;
+}
+
+// Стрелочка внизу для скрола вниз
+.header__arrows {
+    position: absolute;
+    left: 210px;
+    bottom: 30px;
+    z-index: 3;
+}
+
+// Карта нафигации в правом верхнем углу
+.header__map {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+
+
+// Анимация линии в карте
+.line-animation {
+    stroke-dashoffset: 600;
+    stroke-dasharray: 600;
+    animation: animdash 5s infinite 6s;
+}
+
+@keyframes animdash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+// Слайдер
+.header__slider {
+    &-item {
+        height: 100vh;
+        background-image: url(../img/header-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+}
+
+.slider-item__info {
+    position: absolute;
+    right: 80px;
+    bottom: 115px;
+    text-align: right;
+}
+
+.slider-item__info-subtitle {
+    margin-bottom: 5px;
+}
+
+.slider-item__info-subtext {
+    margin-bottom: 8px;
+}
+
+.slider-item__info-title {
+    font-size: 80px;
+    line-height: 86px;
+    font-weight: 800;
+    margin-bottom: 48px;
+}
+
+.slider-item__info-text {
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.slider-arrows {
+    position: absolute;
+    top: 40px;
+    cursor: pointer;
+    z-index: 4;
+
+    &__left {
+        right: 125px;
+    }
+
+    &__right {
+        right: 80px;
+    }
+}
+
+
+// Точки слайдера снизу
+.slider-dots {
+    position: absolute;
+    right: 50px;
+    bottom: 36px;
+    max-width: 920px;
+    width: 100%;
+
+    .slick-current {
+        .dots-box {
+            border-top: 4px solid $green;
+        }
+    }
+}
+
+.dots-box {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    height: 28px;
+    align-items: center;
+    border-top: 4px solid #fff;
+    padding-top: 6px;
+
+    &__number {
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 34px;
+    }
+
+    &__name {
+        font-weight: 300;
+        line-height: 19px;
+        text-transform: capitalize;
+    }
+}
+
+// Боковая навигация
+
+.header__aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    border-right: 1px solid rgba(#fff, .25);
+    height: 100vh;
+    text-align: center;
+}
+
+.header__title {
+    opacity: 0.07;
+    font-size: 200px;
+    font-weight: 800;
+    line-height: 156px;
+    max-width: 467px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+
+}
+
+.menu {
+    padding-top: 40px;
+    a {
+        span {
+            display: block;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 3px;
+            font-weight: 500;
+            padding-top: 6px;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.header__search {
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.header__date {
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 64px;
+
+    span {
+        padding-top: 10px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 1.4px;
+        margin-bottom: 25px;
+        display: block;
+    }
+}
+
+.header__location {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.05px;
+    font-weight: 300;
+    position: relative;
+    padding-left: 19px;
+    text-transform: capitalize;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 11px;
+        height: 13px;
+        background-image: url(../img/marker.svg);
+    }
+}
+
+

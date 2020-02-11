@@ -1,0 +1,236 @@
+.shop {
+    background-image: url(../img/shop-bg.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    // margin-bottom: 300px;
+
+    .slider-arrows {
+        opacity: 0.25;
+    }
+}
+
+
+
+.shop__slider {
+    padding-left: 132px;
+}
+
+
+.shop__slider-inner {
+    display: flex;
+}
+
+.shop__slider-info {
+    max-width: 480px;
+    width: 100%;
+    margin-right: 40px;
+    padding-top: 150px;
+}
+
+.descr__head-shop {
+    max-width: 360px;
+    margin-bottom: 47px;
+}
+
+.shop__star-list {
+    margin-left: -10px;
+}
+
+.shop__slider-price {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 64px;
+
+    sup {
+        font-size: 18px;
+        padding-left: 4px;
+    }
+}
+
+.shop__slider-content {
+    padding-left: 170px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.shop__extras {
+    padding-left: 150px;
+}
+
+.shop__extras-inner {
+    display: flex;
+}
+
+.shop__extras-title {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+
+.shop__extras-box {
+    text-align: center;
+    margin-right: 57px;
+
+}
+
+.shop__extras-img {
+    min-height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.shop__extras-name {
+    letter-spacing: 8px;
+    line-height: 22px;
+    font-size: 18px;
+    opacity: 0.5;
+    margin-bottom: 15px;
+}
+
+.shop__extras-price {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.surfboard {
+    position: relative;
+
+    &__position--1 {
+        right: 40px;
+        top: 215px;
+
+        .surfboard-box__content {
+            top: -15px;
+            left: 40px;
+            padding-left: 104px;
+
+            &::before {
+                left: 0;
+                top: 50%;
+            }
+        }
+    }
+
+    &__position--2 {
+        left: -10px;
+        top: 310px;
+
+        .surfboard-box__content {
+            top: -15px;
+            left: 40px;
+            padding-left: 104px;
+
+            &::before {
+                left: 0;
+                top: 50%;
+            }
+        }
+    }
+
+    &__position--3 {
+        bottom: 70px;
+        left: 50px;
+
+        .surfboard-box__content {
+            padding-left: 0;
+            padding-right: 104px;
+            top: -15px;
+            left: -380px;
+
+            &::before {
+                right: 0;
+                top: 50%;
+            }
+        }
+    }
+}
+
+// Общие стили для выезжающей таблички со свойствами борда
+.surfboard-box__content {
+    display: none;
+    position: absolute;
+    width: 359px;
+    font-weight: 800;
+    line-height: 24px;
+    font-size: 24px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        opacity: 0.5;
+    }
+}
+
+
+.surfboard-box {
+    position: absolute;
+
+}
+
+.surfboard-box__circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #fff;
+    cursor: pointer;
+
+    &.active {
+        .circle-row {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        +.surfboard-box__content {
+            display: block;
+        }
+    }
+
+}
+
+.circle-row {
+    background-color: $green;
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &+.circle-row {
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 285px 0 34px;
+    .btn {
+        span{
+            padding: 17px 17px 15px;
+
+            &::after {
+                display: none;
+            }
+        }
+        
+        
+    }
+
+}
+
+.footer__copy {
+    padding-top: 27px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.05px;
+    color: rgba(#fff, .5);
+}
