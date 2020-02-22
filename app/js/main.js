@@ -12,6 +12,12 @@ $(function () {
         slidesToShow: 4,
         slidesToScroll: 4,
         asNavFor: '.header__slider',
+        responsive: [
+          {
+            breakpoint: 961,
+            settings: "unslick"
+          },
+        ]
     });
 
     $('.surf-slider').slick({
@@ -20,14 +26,44 @@ $(function () {
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt="">',
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt="">',
         asNavFor: '.slider-map',
-    });
+        responsive: [
+          {
+            breakpoint: 1210,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 901,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          
+        ]
+      });
+    
 
     $('.slider-map').slick({
         slidesToShow: 8,
         slidesToScroll: 1,
-        arrow: false,
+        arrows: false,
         asNavFor: '.surf-slider',
         focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 1101,
+            settings: {
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 901,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+        ]
     });
 
     $('.holder__slider, .shop__slider').slick({

@@ -32,7 +32,7 @@
             display: block;
             width: 285px;
             padding: 25px 25px 0 25px;
-            
+
         }
     }
 }
@@ -51,6 +51,7 @@
     padding-bottom: 8px;
     margin-bottom: 8px;
     position: relative;
+
     &::before {
         content: '';
         position: absolute;
@@ -74,6 +75,7 @@
 
 .slider-map-dots__content-item {
     text-align: center;
+
     img {
         margin-bottom: 7px;
         text-align: center;
@@ -112,6 +114,7 @@
         position: absolute;
         bottom: 35px;
         transform: translateX(-50%);
+
         &::before {
             content: '';
             position: absolute;
@@ -122,6 +125,7 @@
             border-right: 12px solid transparent;
             bottom: -20px;
             left: 50%;
+            // left: calc(50% - 1px);
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
         }
@@ -131,9 +135,11 @@
 .slider-map-dots--1 {
     top: 335px;
     left: 0;
+
     .slider-map-dots__content {
         z-index: 1;
         transform: translateX(0);
+
         &::before {
             left: 0;
         }
@@ -166,13 +172,13 @@
 }
 
 .slider-map-dots--4 {
-    top: 500px;
-    left: -40px;
+    top: 470px;
+    left: -25px;
 }
 
 .slider-map-dots--5 {
     top: 225px;
-    left: -45%;
+    left: -65px;
 }
 
 .slider-map-dots--6 {
@@ -188,8 +194,10 @@
 .slider-map-dots--8 {
     top: 470px;
     left: 35px;
+
     .slider-map-dots__content {
-        transform: translateX(-262px);
+        transform: translateX(-260px);
+
         &::before {
             left: auto;
             right: 0;
@@ -236,10 +244,11 @@
 }
 
 .surf-box {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    &__wrapper {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     &__inner {
         min-height: 750px;
