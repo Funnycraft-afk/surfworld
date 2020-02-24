@@ -12,12 +12,12 @@ $(function () {
         slidesToShow: 4,
         slidesToScroll: 4,
         asNavFor: '.header__slider',
-        responsive: [
-          {
-            breakpoint: 961,
-            settings: "unslick"
-          },
-        ]
+        // responsive: [
+        //   {
+        //     breakpoint: 961,
+        //     settings: "unslick"
+        //   },
+        // ]
     });
 
     $('.surf-slider').slick({
@@ -37,6 +37,20 @@ $(function () {
             breakpoint: 901,
             settings: {
               slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 721,
+            settings: {
+              slidesToShow: 1,
+              centerMode: true,
+            }
+          },
+          {
+            breakpoint: 426,
+            settings: {
+              slidesToShow: 1,
+              centerMode: false,
             }
           },
           
@@ -61,6 +75,14 @@ $(function () {
             breakpoint: 901,
             settings: {
               slidesToShow: 2,
+              centerMode: true,
+            }
+          },
+          {
+            breakpoint: 721,
+            settings: {
+              slidesToShow: 1,
+              centerMode: true,
             }
           },
         ]
