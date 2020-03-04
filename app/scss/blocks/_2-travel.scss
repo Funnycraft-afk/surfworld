@@ -7,14 +7,6 @@
         top: 230px;
         opacity: 0.5;
     }
-
-    &.sleep {
-        background-image: url(../img/flower.png);
-        background-repeat: no-repeat;
-        background-position: bottom right;
-    
-
-    }
 }
 
 
@@ -53,23 +45,14 @@
 .descr__head {
     position: relative;
     padding-right: 70px;
-    &.descr__head-sleep {
-        padding-right: 220px;
-    }
+    
     img {
         position: absolute;
         right: 0;
         top: 0;
         
     }
-    .holder__star-list {
-        position: absolute;
-        right: 0;
-        top: 0;
-        img {
-            position: static;
-        }
-    }
+    
 }
 
 .holder-slide__info {

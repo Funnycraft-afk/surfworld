@@ -37,6 +37,18 @@
     .surf-box__inner {
         min-height: 650px;
     }
+
+    .shop__slider-info {
+        margin-right: 0;
+    }
+
+    .shop__slider-price {
+        margin-bottom: 30px;
+    }
+
+    .shop__slider-content {
+        padding-left: 40px;
+    }
 }
 
 @media (max-width: 1366px) {
@@ -87,6 +99,10 @@
         left: 20px;
         bottom: 20px;
     }
+
+    
+
+    
 }
 
 @media (max-width: 1340px) {
@@ -175,6 +191,10 @@
 
     .slider-map-dots--8 {
         top: 400px;
+    }
+
+    .shop__slider-inner {
+        display: block;
     }
 
 
@@ -349,7 +369,7 @@
 
     .holder-slide__info {
         display: block;
-            // Прозрачная граница снизу нужна, чтобы работал нижний отступ до кнопки
+        // Прозрачная граница снизу нужна, чтобы работал нижний отступ до кнопки
         border-bottom: 1px solid transparent;
         margin-bottom: 20px;
     }
@@ -391,17 +411,21 @@
             }
         }
     }
-    
+
     .quantity-button.quantity-up {
         right: auto;
         left: 25px;
-      }
-      
-      .quantity-button.quantity-down {
+    }
+
+    .quantity-button.quantity-down {
         right: auto;
-        
-      }
-    
+    }
+
+    .sleep .holder-slide__descr {
+        background-position: right 10px;
+
+    }
+
 }
 
 @media (max-width: 960px) {
@@ -454,12 +478,14 @@
     .holder-slide__info-title {
         font-size: 36px;
     }
-}
 
-@media (max-width: 640px) {
     .holder-slide__descr {
         background-image: none !important;
     }
+}
+
+@media (max-width: 640px) {
+    
 
     .btn {
         font-weight: 800;
@@ -469,7 +495,7 @@
 
     .holder-slide__btn {
         margin-top: 10px;
-        }
+    }
 }
 
 @media (max-width: 520px) {
@@ -540,6 +566,16 @@
         display: block;
         width: 250px;
         padding: 28px 15px 0;
+    }
+
+    .holder-slide__descr .holder__star-list {
+        position: static;
+        margin-left: -10px;
+        
+    }
+
+    .descr__head.descr__head-sleep {
+        padding-right: 0;
     }
 }
 
