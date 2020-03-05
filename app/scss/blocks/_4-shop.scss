@@ -76,7 +76,8 @@
 }
 
 .shop__extras-img {
-    min-height: 105px;
+    height: 120px;
+    width: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,6 +98,10 @@
     line-height: 40px;
 }
 
+.surfboard-box {
+    position: absolute;
+}
+
 .surfboard {
     position: relative;
 
@@ -106,13 +111,7 @@
 
         .surfboard-box__content {
             top: -15px;
-            left: 40px;
-            padding-left: 104px;
-
-            &::before {
-                left: 0;
-                top: 50%;
-            }
+            left: 120px;
         }
     }
 
@@ -122,13 +121,7 @@
 
         .surfboard-box__content {
             top: -15px;
-            left: 40px;
-            padding-left: 104px;
-
-            &::before {
-                left: 0;
-                top: 50%;
-            }
+            left: 120px;
         }
     }
 
@@ -137,16 +130,27 @@
         left: 50px;
 
         .surfboard-box__content {
-            padding-left: 0;
-            padding-right: 104px;
             top: -15px;
-            left: -380px;
-
-            &::before {
-                right: 0;
-                top: 50%;
-            }
+            right: 100px;
         }
+    }
+}
+
+.surfboard__position--1 .surfboard-box__circle {
+    &::before {
+        left: 30px;
+    }
+}
+
+.surfboard__position--2 .surfboard-box__circle {
+    &::before {
+        left: 30px;
+    }
+}
+
+.surfboard__position--3 .surfboard-box__circle {
+    &::before {
+        right: 30px;
     }
 }
 
@@ -154,25 +158,10 @@
 .surfboard-box__content {
     display: none;
     position: absolute;
-    width: 359px;
+    width: 280px;
     font-weight: 800;
     line-height: 24px;
     font-size: 24px;
-
-    &::before {
-        content: "";
-        position: absolute;
-        width: 80px;
-        height: 1px;
-        background-color: #fff;
-        opacity: 0.5;
-    }
-}
-
-
-.surfboard-box {
-    position: absolute;
-
 }
 
 .surfboard-box__circle {
@@ -191,6 +180,21 @@
         +.surfboard-box__content {
             display: block;
         }
+
+        &::before {
+            display: block;
+        }
+    }
+
+    &::before {
+        display: none;
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        opacity: 0.5;
+        top: 50%;
     }
 
 }
@@ -212,16 +216,17 @@
 .footer {
     text-align: center;
     padding: 285px 0 34px;
+
     .btn {
-        span{
+        span {
             padding: 17px 17px 15px;
 
             &::after {
                 display: none;
             }
         }
-        
-        
+
+
     }
 
 }
