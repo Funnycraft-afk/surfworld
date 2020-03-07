@@ -306,6 +306,10 @@
     .shop__extras {
         padding-left: 100px;
     }
+
+    .shop__slider-info {
+        padding-top: 100px;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -533,6 +537,33 @@
         background-position: right 10px;
     }
 
+    .surfboard {
+        margin-left: 30px;
+    }
+
+    .shop__slider-info {
+       max-width: 350px;
+       padding-top: 70px;
+       margin-right: 0;
+    }
+
+}
+
+@media (max-width: 960px) {
+    .slider-dots {
+        display: none;
+    }
+
+    .shop__extras {
+        padding-left: 50px;
+    }
+
+    .shop__slider-info {
+       max-width: 300px;
+    }
+}
+
+@media (max-width: 900px) {
     .shop__slider-content {
         flex-direction: column;
         margin-left: 50px;
@@ -542,7 +573,6 @@
     .shop__extras-inner {
         flex-direction: row;
         justify-content: space-between;
-        // align-items: center;
     }
 
     .shop__extras {
@@ -551,22 +581,64 @@
     }
 
     .surfboard {
-        margin-bottom: 30px;
-        margin-left: 30px;
+        margin-bottom: 20px;
+        
     }
 
+    .surfboard {
+        width: 200px;
+        &__position--1 {
+
+           right: 70px;
+            top: 150px;
+            .surfboard-box__content {
+                top: 25px;
+                left: -150px;
+            }
+        }
+
+        &__position--2 {
+            left: 0;
+           top: 300px;
+            .surfboard-box__content {
+                top: 25px;
+                left: -70px;
+            }
+        }
+
+        &__position--3 {
+            bottom: 50px;
+            left: 35px;
+            .surfboard-box__content {
+                top: 25px;
+                left: -100px;
+            }
+        }
+    }
+
+    .shop__extras-title {
+        margin-bottom: 10px;
+    }
+
+    .shop__extras-img {
+        margin-bottom: 0;
+    }
+    
+    .shop__extras-name {
+        margin-bottom: 0;
+    }
+    
+    .shop__extras-price {
+        margin-bottom: 0;
+    }
+    
 }
 
-@media (max-width: 960px) {
-    .slider-dots {
-        display: none;
-
+@media (max-width: 767px) {
+    .shop__slider-content {
+        margin-left: 0;
     }
 }
-
-@media (max-width: 900px) {}
-
-@media (max-width: 767px) {}
 
 @media (max-width: 720px) {
     .title {
@@ -579,12 +651,10 @@
         h3 {
             font-size: 70px;
         }
-
     }
 
     .surf-slider .slider-arrows {
         top: 20px;
-
     }
 
     .surf-slider {
