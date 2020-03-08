@@ -279,6 +279,7 @@
     .surf,
     .holder {
         padding: 70px 0 30px;
+        
     }
 
     .holder {
@@ -309,6 +310,10 @@
 
     .shop__slider-info {
         padding-top: 100px;
+    }
+
+    .footer {
+        padding-top: 150px;
     }
 }
 
@@ -638,19 +643,51 @@
     .shop__slider-content {
         margin-left: 0;
     }
+
+    .surfboard {
+        margin-bottom: 50px;
+    }
+
+    .shop__slider-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .shop__slider-info {
+        margin-bottom: 50px;
+    }
+
+    .descr__head {
+            font-size: 32px;
+    }
+
+    .descr__head-shop {
+        margin-bottom: 20px;
+    }
+
+    .holder {
+        border-bottom: 1px solid transparent;
+    }
+
+    .shop {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 720px) {
     .title {
         span {
             font-size: 90px;
-            padding-bottom: 80px;
+            // padding-bottom: 80px;
             padding-left: 10px;
         }
 
         h3 {
             font-size: 70px;
         }
+    }
+
+    .surf__subtitle {
+        margin-top: 50px;
     }
 
     .surf-slider .slider-arrows {
@@ -694,6 +731,10 @@
 
     .holder-slide__btn {
         margin-top: 10px;
+    }
+
+    .holder.sleep {
+        background-image: none;
     }
 }
 
@@ -755,6 +796,10 @@
         // background-size: 120px;
     }
 
+    .shop__slider {
+        padding-left: 10px;
+    }
+
 
 }
 
@@ -776,6 +821,61 @@
     .descr__head.descr__head-sleep {
         padding-right: 0;
     }
+
+    .shop__extras-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .surfboard-box__content {
+        width: 220px;
+        font-size: 18px;
+        // font-weight: 500;
+        // line-height: 22px;
+    }
+
+    .surfboard {
+        width: 200px;
+        &__position--1 {
+
+           right: 70px;
+            top: 150px;
+            .surfboard-box__content {
+                top: 25px;
+                left: -120px;
+               
+            }
+        }
+
+        &__position--2 {
+            left: 0;
+           top: 300px;
+            .surfboard-box__content {
+                top: 25px;
+                left: -50px;
+            }
+        }
+
+        &__position--3 {
+            bottom: 50px;
+            left: 35px;
+            .surfboard-box__content {
+                top: 25px;
+                left: -85px;
+            }
+        }
+    }
+
+    .surfboard-box__circle {
+        &::before {
+            width: 30px;
+        }
+    }
+    
+    .footer {
+        padding-top: 100px;
+    }
+
 }
 
 @media (max-width: 374px) {
@@ -785,4 +885,9 @@
         width: 210px;
         padding: 28px 10px 0;
     }
+
+    .descr__head {
+        width: 300px;
+    }
+
 }
