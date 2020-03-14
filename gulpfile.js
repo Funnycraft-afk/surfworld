@@ -62,6 +62,7 @@ gulp.task('js', function() {
 // или просто в определённом порядке
 // тогда добавляем квадратные скобки и в них через запятую перечисляем пути
         'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/wow.js/dist/wow.js'
         // 'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
     ])
     .pipe(concat('libs.min.js'))

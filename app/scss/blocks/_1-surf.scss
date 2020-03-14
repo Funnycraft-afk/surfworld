@@ -108,6 +108,7 @@
     }
 
     &__content {
+        z-index: 1;
         display: none;
         border-radius: 10px;
         background: rgba(#000, .7);
@@ -137,7 +138,7 @@
     left: 0;
 
     .slider-map-dots__content {
-        z-index: 1;
+        
         transform: translateX(0);
 
         &::before {
