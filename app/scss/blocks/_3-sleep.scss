@@ -20,3 +20,10 @@
         padding-right: 220px;
     }
 }
+
+
+// чтобы поле с ценой не прыгало когда меняется сумма
+.total {
+    display: inline-block;
+    width: 90px;
+}
